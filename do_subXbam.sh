@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -x
+# set -x
 
 # get input file list of bams
 BAM_LIST="bam_list.txt"
@@ -56,5 +56,6 @@ while IFS= read -r bam || [[ -n "$bam" ]]; do
     fi
 
     echo "Output file: $OUTPUT_NAME"
-    
+
 done < "$BAM_LIST"
+
