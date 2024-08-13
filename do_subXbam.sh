@@ -16,7 +16,7 @@ fi
 
 # read in the input and make that as list.
 while IFS= read -r bam || [[ -n "$bam" ]]; do
-    echo "Processing BAM file: $bam"  
+    echo "\nProcessing BAM file: $bam"  
     if [[ ! -f "$bam" ]]; then
         echo "Error: BAM file '$bam' not found."
         continue
@@ -55,7 +55,7 @@ while IFS= read -r bam || [[ -n "$bam" ]]; do
         continue
     fi
 
-    echo "Output file: "$OUTDIR"/"$OUTPUT_NAME" "
+    echo "Output file: "$OUTDIR"/"$OUTPUT_NAME"\n "
 
 done < "$BAM_LIST"
 
