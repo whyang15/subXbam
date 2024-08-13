@@ -55,7 +55,7 @@ while IFS= read -r bam || [[ -n "$bam" ]]; do
         continue
     fi
 
-    echo "Output file: $OUTPUT_NAME"
+    echo "Output file: "$OUTDIR"/"$OUTPUT_NAME"
 
 done < "$BAM_LIST"
 
