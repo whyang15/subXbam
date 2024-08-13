@@ -1,2 +1,2 @@
-/Users/weihsienyang/Desktop/AY_Porfolio/datasets/PB_Microbial/m64004_210929_143746.bc2031.bam
-/Users/weihsienyang/Desktop/AY_Porfolio/datasets/PB_Microbial/m64004_210929_143746.bc2032.bam
+/Users/weihsienyang/Desktop/AY_Porfolio/shell_scripts/subXbam2/test_data/tiny_m64004_210929_143746.bc2031.bam
+/Users/weihsienyang/Desktop/AY_Porfolio/shell_scripts/subXbam2/test_data/tiny_m64004_210929_143746.bc2032.bam

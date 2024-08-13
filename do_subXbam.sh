@@ -3,9 +3,9 @@
 
 # User Input Variables:
 BAM_LIST="bam_list.txt"
-GENOME_SIZE=5000000
-END_COV=15
-OUTDIR="/Users/weihsienyang/Desktop/AY_Porfolio/datasets/PB_Microbial/subXbam_outputs"
+GENOME_SIZE=5000
+END_COV=5
+OUTDIR="output_directory"
 
 # Check if input file exists:
 if [[ ! -f "$BAM_LIST" ]]; then
