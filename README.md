@@ -13,9 +13,9 @@ Within the shell script, user can specify what their estimated genome size and h
 ```
 # User Input Variables:
 BAM_LIST="bam_list.txt"
-GENOME_SIZE=5000000
-END_COV=15
-OUTDIR="/your_working_directory/subXbam_outputs"
+GENOME_SIZE=5000
+END_COV=5
+OUTDIR="output_directory"
 ```
 
 
@@ -37,23 +37,33 @@ or
 The subsample BAM files will be named with the format <input_name>_subset_<end_cov>x.bam, where <input_name> is the base name of the original BAM file, and <end_cov> is the desired final coverage.
 
 ## Example Run and output:
+Change the Input Variables section in the shell script:
 ```
-% ./do_subXbam.sh 
+# User Input Variables:
+BAM_LIST="bam_list.txt"
+GENOME_SIZE=5000
+END_COV=5
+OUTDIR="output_directory"
+```
+  
+Run script as follows: 
+```
+% ./do_subXbam.sh   
 
-Processing BAM file: /Users/weihsienyang/Desktop/AY_Porfolio/datasets/PB_Microbial/m64004_210929_143746.bc2031.bam
-Total bases in the BAM file: 187013282
-Estimated Coverage: 37.40
-Subsample factor: .40
-Input name: m64004_210929_143746.bc2031
-Output file: /Users/weihsienyang/Desktop/AY_Porfolio/datasets/PB_Microbial/subXbam_outputs/m64004_210929_143746.bc2031_subset_15x.bam
+Processing BAM file: /Users/weihsienyang/Desktop/AY_Porfolio/shell_scripts/subXbam2/test_data/tiny_m64004_210929_143746.bc2031.bam
+Total bases in the BAM file: 86929
+Estimated Coverage: 17.38
+Subsample factor: .28
+Input name: tiny_m64004_210929_143746.bc2031
+Output file: output_directory/tiny_m64004_210929_143746.bc2031_subset_5x.bam
  
 
-Processing BAM file: /Users/weihsienyang/Desktop/AY_Porfolio/datasets/PB_Microbial/m64004_210929_143746.bc2032.bam
-Total bases in the BAM file: 168500264
-Estimated Coverage: 33.70
-Subsample factor: .44
-Input name: m64004_210929_143746.bc2032
-Output file: /Users/weihsienyang/Desktop/AY_Porfolio/datasets/PB_Microbial/subXbam_outputs/m64004_210929_143746.bc2032_subset_15x.bam
+Processing BAM file: /Users/weihsienyang/Desktop/AY_Porfolio/shell_scripts/subXbam2/test_data/tiny_m64004_210929_143746.bc2032.bam
+Total bases in the BAM file: 89235
+Estimated Coverage: 17.84
+Subsample factor: .28
+Input name: tiny_m64004_210929_143746.bc2032
+Output file: output_directory/tiny_m64004_210929_143746.bc2032_subset_5x.bam
  
 ```
 
